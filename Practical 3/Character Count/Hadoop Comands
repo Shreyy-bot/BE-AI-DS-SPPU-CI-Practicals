@@ -1,5 +1,5 @@
 hadoop jar $HADOOP_HOME/share/hadoop/tools/lib/hadoop-streaming-*.jar \
   -input /user/input.txt \
   -output /user/output_charcount \
-  -mapper Mapper(Character_Count).py" \
-  -reducer Reducer(Character_Count).py"
+  -mapper Mapper_char \
+  -reducer Reducer_char.py
